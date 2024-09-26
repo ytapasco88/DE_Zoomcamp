@@ -36,8 +36,10 @@ git clone  git@github.com:<RUTA DEL REPO EN GIT DESDE SSH>.git
 
 aca esta la nueva rama
 
+```bash
 git checkout -b pc_trabajo
 git status
 git add .
 git commit -m ""
-git push --set-upstream origin pc_casa
+git push --set-upstream origin pc_trabajo
+```
