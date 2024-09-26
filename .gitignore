@@ -160,3 +160,9 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Ignoring Folders
+/home/ytapasco88/Learning/DE_Zoomcamp/week_1_basics_n_setup/2_docker_sql/ny_taxi_postgres_data/
+**/ny_taxi_postgres_data/
+*.csv
+*.parquet
