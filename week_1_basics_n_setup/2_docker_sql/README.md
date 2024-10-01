@@ -104,6 +104,8 @@ sudo chmod -R 744 /home/ytapasco88/Learning/DE_Zoomcamp/week_1_basics_n_setup/2_
 sudo chmod 777 /home/ytapasco88/DE_Zoomcamp/week_1_basics_n_setup/2_docker_sql
 sudo chmod 777 /home/ytapasco88/DE_Zoomcamp/week_1_basics_n_setup/2_docker_sql/ny_taxi_postgres_data
 
+sudo dockerd
+
 docker run -it \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
@@ -148,7 +150,7 @@ docker run -it \
   dpage/pgadmin4
 
 
-http://localhost:8080/browser/
+http://localhost:8080/browser/ls
 
 docker network create pg-network
 

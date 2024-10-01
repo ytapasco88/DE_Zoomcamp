@@ -1,0 +1,14 @@
+{
+    "msg": "all keys",
+    "data": [
+        {
+            "topics_ID": "musica-test1",
+            "keyword": [
+                "( \"shakira\" OR \"maluma\" OR \"jbalvin\" OR \"juanes\" OR \"carlosvives\" ) \"concierto\""
+            ],
+            "carpeta": "Science",
+            "id": 1,
+            "exclude": []
+        }
+    ]
+}
