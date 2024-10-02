@@ -188,19 +188,17 @@ pip install ipynb-py-convert
 ipynb-py-convert upload-data.ipynb upload-data.py
 
 ```
-final
-final
 
+pgcli -h localhost -p 5432 -u root -W root -d taxi
 
-
-
-
-
-
-
-
-
-
+python ingest_data.py \
+    --user=root \
+    --password=root \
+    --host=localhost \
+    --port=5432 \
+    --db=ny_taxi \
+    --table_name=yellow_taxi_trips \
+    --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
 
 
 

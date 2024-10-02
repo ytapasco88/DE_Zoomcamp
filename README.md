@@ -43,3 +43,10 @@ git add .
 git commit -m ""
 git push --set-upstream origin pc_trabajo
 ```
+
+Instalacion docker
+https://gist.github.com/dehsilvadeveloper/c3bdf0f4cdcc5c177e2fe9be671820c7
+
+
+
+
