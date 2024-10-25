@@ -22,8 +22,20 @@ docker run hello-world
 * Para usar una imagen de ubuntu:
 `docker run -it ubuntu bash`
 
-* Creamos una imagen de docker en un Dockerfile la cual instala la libreria pandas
 
+* Para usar una imagen de python:3.9:
+`docker run -it python:3.9`
+
+
+* Para usar una imagen de python:3.9 con la libreria pandas: 
+`docker run -it --entrypoint=bash python:3.9`
+
+** dentro del root colocar `pip install pandas`
+
+El inconveniente con lo anterior es que cada vez que se requiera usar python con pandas, se debe realizar estos mismos pasos
+
+
+* Creamos una imagen de docker en un Dockerfile la cual instala la libreria pandas
 
 ## En DockerFile:
 
@@ -90,19 +102,16 @@ docker run -it test:pandas 2018-04-18
 ```
 
 
-
-
-
 # POSTGRES CON DOCKER
 
 ## WSL: 
 ```bash
 sudo su
-sudo chmod -R 744 /home/ytapasco88/Learning/DE_Zoomcamp/week_1_basics_n_setup/2_docker_sql
-sudo chmod -R 744 /home/ytapasco88/Learning/DE_Zoomcamp/week_1_basics_n_setup/2_docker_sql/ny_taxi_postgres_data/
+sudo chmod -R 744 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform
+sudo chmod -R 744 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform/ny_taxi_postgres_data/
 
-sudo chmod 777 /home/ytapasco88/DE_Zoomcamp/week_1_basics_n_setup/2_docker_sql
-sudo chmod 777 /home/ytapasco88/DE_Zoomcamp/week_1_basics_n_setup/2_docker_sql/ny_taxi_postgres_data
+sudo chmod 777 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform
+sudo chmod 777 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform/ny_taxi_postgres_data
 
 sudo dockerd
 
