@@ -106,12 +106,17 @@ docker run -it test:pandas 2018-04-18
 
 ## WSL: 
 ```bash
-sudo su
 sudo chmod -R 744 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform
 sudo chmod -R 744 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform/ny_taxi_postgres_data/
 
+sudo chmod -R 744 $(pwd)/
+sudo chmod -R 744 $(pwd)/ny_taxi_postgres_data/
+
 sudo chmod 777 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform
 sudo chmod 777 /home/yeison/Documentos/Learning/DE_Zoomcamp/01-docker-terraform/ny_taxi_postgres_data
+
+sudo chmod 777 $(pwd)/
+sudo chmod 777 $(pwd)/ny_taxi_postgres_data/
 
 sudo dockerd
 
